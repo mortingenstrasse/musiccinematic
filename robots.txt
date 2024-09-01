@@ -1,0 +1,10 @@
+# All User-agents are allowed to crawl all content
+User-agent: *
+Disallow:
+
+# Block specific folders (if any)
+# Disallow: /private/
+# Disallow: /tmp/
+
+# Specify the location of the sitemap
+Sitemap: https://www.musiccinematic.com/sitemap.xml
