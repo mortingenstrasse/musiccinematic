@@ -227,3 +227,42 @@ footer a:hover {
         font-size: 0.9rem;
     }
 }
+
+/* Slider container */
+.photo-slider {
+    width: 100%;
+    overflow: hidden;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Slider track */
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(400px * 5); /* Slider track'in genişliğini tüm slide'ları kapsayacak şekilde ayarlıyoruz */
+}
+
+/* Individual slides */
+.slide {
+    min-width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 0 10px;
+}
+
+/* Image style */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); /* Karanlık efekt */
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Hover effect */
+.slide:hover img {
+    filter: brightness(70%);
+    transform: scale(1.05); /* Hafif büyütme efekti */
+}
