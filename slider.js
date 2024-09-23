@@ -17,3 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setInterval(autoSlide, 3000); // Her 3 saniyede bir fotoğraf kaydırılır
 });
+
+
+

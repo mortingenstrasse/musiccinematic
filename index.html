@@ -31,34 +31,64 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <div class="overlay"></div>
-        <div class="header-content">
-            <h1>
-                <span class="highlight">music</span><br>
-                cinematic.com
-            </h1>
-            <p>Elevate Your Projects with Captivating Cinematic Music</p>
-            <a href="#contact" class="btn">Get in Touch</a>
-        </div>
-    </header>
+   <!-- Header Section -->
+<!-- Header Section -->
+<header>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1>
+            <span class="highlight">music</span><br>
+            cinematic.com
+        </h1>
+  <!-- CTA Bölümü -->
+<p class="cta-text">Elevate Your Projects with Captivating Cinematic Music.</p>
+<p class="cta-subtext">Let’s schedule a Zoom meeting and start creating music for your project today!</p>
+<p class="cta-email">
+    Drop a message to <span class="cta-email-highlight" id="email-copy">tuncalicioglu@gmail.com</span>, and let’s set up a time to chat.
+</p>
+<!-- Tooltip mesajı -->
+<span id="tooltip" class="tooltip-text">tuncalicioglu@gmail.com copied!</span>
+
+
+
+        <!-- Başlık Ekledik -->
+        <h3>Selected Works</h3>
+
+        <!-- YouTube Video Wrapper -->
+<div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?autoplay=1&mute=0&loop=1&list=PLmfa5GZ7xv2SWZ0xPTNqzzN1_jMahWpLt&si=kb8PrXK4xSeNdAZ-"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+</div>
+
+    </div>
+</header>
+
+
+
     
-    
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p><strong>Tunç Alicioğlu</strong> is an accomplished composer based in Istanbul, renowned for crafting highly realistic orchestral mockups and producing high-quality soundtracks for films, games, and television. By seamlessly blending advanced digital techniques with live acoustic recordings, Tunç creates immersive and evocative music that enhances the emotional impact and narrative depth of any project.</p>
+  <!-- About Me Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <!-- Kısa Metin -->
+    <p id="short-description">
+        Primarily working in Middle Eastern, epic, and classical orchestral music styles, Tunç Alicioğlu is a versatile musician who explores a wide range of musical genres...
+        <span id="read-more" style="cursor: pointer; text-decoration: underline; color: #e50914;">Read More</span>
+    </p>
 
-<p>Tunç's expertise extends beyond digital orchestration; he is proficient in playing a variety of acoustic instruments, including drums, darbuka, tambourine, oud, guitar, and piano. His musical style is a unique fusion of his Middle Eastern heritage and Western influences, resulting in compositions that are both culturally rich and sonically diverse.</p>
+    <!-- Uzun Metin (Başlangıçta Gizli) -->
+    <p id="full-description" style="display: none;">
+        Tunç Alicioğlu is an accomplished composer based in Istanbul, renowned for crafting highly realistic orchestral mockups and producing high-quality soundtracks for films, games, and television. By seamlessly blending advanced digital techniques with live acoustic recordings, Tunç creates immersive and evocative music that enhances the emotional impact and narrative depth of any project.
 
-<p>Through close collaboration with directors and creators, Tunç ensures that every soundtrack is meticulously tailored to match the specific vision and atmosphere of the project. Whether working on a feature film, an indie game, or a television series, his dedication to excellence guarantees a soundtrack of unparalleled quality and impact.</p>
+        Tunç's expertise extends beyond digital orchestration; he is proficient in playing a variety of acoustic instruments, including drums, darbuka, tambourine, oud, guitar, and piano. His musical style is a unique fusion of his Middle Eastern heritage and Western influences, resulting in compositions that are both culturally rich and sonically diverse.
 
-<p>With the establishment of <strong>musiccinematic.com</strong>, Tunç aspires to expand his network and collaborate with like-minded professionals. While fully committed to composing full-time, the current landscape has posed challenges in securing opportunities to showcase his talents widely. Tunç is eager to connect with projects, even those with limited budgets, to build relationships and contribute his skills. If you have a project that could benefit from exceptional music, please don't hesitate to reach out.</p>
+        Through close collaboration with directors and creators, Tunç ensures that every soundtrack is meticulously tailored to match the specific vision and atmosphere of the project. Whether working on a feature film, an indie game, or a television series, his dedication to excellence guarantees a soundtrack of unparalleled quality and impact.
 
-        </div>
-    </section>
-    
+        With the establishment of musiccinematic.com, Tunç aspires to expand his network and collaborate with like-minded professionals. While fully committed to composing full-time, the current landscape has posed challenges in securing opportunities to showcase his talents widely. Tunç is eager to connect with projects, even those with limited budgets, to build relationships and contribute his skills. If you have a project that could benefit from exceptional music, please don't hesitate to reach out.
+    </p>
+</section>
+
     <!-- Portfolio Section -->
     <section id="portfolio">
         <div class="container">
@@ -169,5 +199,6 @@
             </p>
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

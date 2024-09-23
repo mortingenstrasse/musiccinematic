@@ -34,12 +34,30 @@ header .overlay {
     z-index: 1;
 }
 
-header .header-content {
+/* Header İçeriği Ortalamak ve Aşağı Almak İçin (Desktop) */
+.header-content {
     position: relative;
     z-index: 2;
     max-width: 700px;
     padding: 0 20px;
+    margin-top: 320px; /* Desktop için boşluk */
+    text-align: center;
 }
+
+/* Responsive Düzenleme (Mobil) */
+@media (max-width: 768px) {
+    .header-content {
+        margin-top: 100px; /* Mobil cihazlarda boşluğu azaltır */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        margin-top: 50px; /* Daha küçük mobil cihazlar için daha da azaltır */
+    }
+}
+
+
 
 header h1 {
     font-size: 3.5rem;
@@ -265,4 +283,83 @@ footer a:hover {
 .slide:hover img {
     filter: brightness(70%);
     transform: scale(1.05); /* Hafif büyütme efekti */
+}
+
+/* About Me Section Ortalamak İçin */
+#about {
+    text-align: center; /* Metinleri ortalar */
+    margin: 0 auto; /* Dikeyde ve yatayda ortalama */
+    max-width: 800px; /* İsteğe bağlı genişlik ayarı */
+    padding: 20px; /* İsteğe bağlı boşluk ayarı */
+}
+
+#about h2 {
+    margin-bottom: 20px; /* Başlık ve metin arasındaki boşluk */
+}
+
+#full-description {
+    margin-top: 10px; /* Uzun metnin üstünde boşluk */
+}
+
+/* Video Wrapper for Responsive Embed */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* CTA Stilleri */
+.cta-text, .cta-subtext, .cta-email {
+    text-align: center;
+}
+
+.cta-email-highlight {
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+.cta-email-highlight:hover {
+    background-color: #b20710;
+    transition: background-color 0.3s ease;
+}
+
+/* Tooltip Stilleri */
+.tooltip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.9rem;
+}
+
+.cta-email-highlight:active + #tooltip,
+.tooltip-visible {
+    visibility: visible;
+    opacity: 1;
 }
