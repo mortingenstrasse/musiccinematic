@@ -22,6 +22,7 @@ header {
     justify-content: center;
     text-align: center;
     color: #ffffff;
+    overflow: hidden; /* Görselin taşmasını engellemek için */
 }
 
 header .overlay {
@@ -30,11 +31,10 @@ header .overlay {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(25, 13, 13, 0.7);
     z-index: 1;
 }
 
-/* Header İçeriği Ortalamak ve Aşağı Almak İçin (Desktop) */
 .header-content {
     position: relative;
     z-index: 2;
@@ -43,21 +43,6 @@ header .overlay {
     margin-top: 320px; /* Desktop için boşluk */
     text-align: center;
 }
-
-/* Responsive Düzenleme (Mobil) */
-@media (max-width: 768px) {
-    .header-content {
-        margin-top: 100px; /* Mobil cihazlarda boşluğu azaltır */
-    }
-}
-
-@media (max-width: 480px) {
-    .header-content {
-        margin-top: 50px; /* Daha küçük mobil cihazlar için daha da azaltır */
-    }
-}
-
-
 
 header h1 {
     font-size: 3.5rem;
@@ -222,6 +207,10 @@ footer a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .header-content {
+        margin-top: 100px; /* Mobilde boşluğu azaltır */
+    }
+
     header h1 {
         font-size: 2.5rem;
     }
@@ -232,6 +221,10 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
+    .header-content {
+        margin-top: 50px; /* Daha küçük ekranlarda daha da azaltır */
+    }
+
     header h1 {
         font-size: 1.8rem;
     }
@@ -287,18 +280,18 @@ footer a:hover {
 
 /* About Me Section Ortalamak İçin */
 #about {
-    text-align: center; /* Metinleri ortalar */
-    margin: 0 auto; /* Dikeyde ve yatayda ortalama */
-    max-width: 800px; /* İsteğe bağlı genişlik ayarı */
-    padding: 20px; /* İsteğe bağlı boşluk ayarı */
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
 }
 
 #about h2 {
-    margin-bottom: 20px; /* Başlık ve metin arasındaki boşluk */
+    margin-bottom: 20px;
 }
 
 #full-description {
-    margin-top: 10px; /* Uzun metnin üstünde boşluk */
+    margin-top: 10px;
 }
 
 /* Video Wrapper for Responsive Embed */
@@ -307,7 +300,8 @@ footer a:hover {
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 800px; /* Maksimum genişlik ayarlandı */
+    margin: 0 auto; /* Ortalıyor */
     background: #000;
 }
 
@@ -319,6 +313,7 @@ footer a:hover {
     height: 100%;
     border: 0;
 }
+
 
 /* CTA Stilleri */
 .cta-text, .cta-subtext, .cta-email {
